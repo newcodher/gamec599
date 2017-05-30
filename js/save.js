@@ -10,6 +10,7 @@ function saveGame(){
 // Loads Game
 function loadGame() {
 	$.extend(true, player, JSON.parse(localStorage.getItem("mainSave")));
+  updateEverything();
 }
 
 // Resets Game
@@ -41,8 +42,6 @@ function importSave(){
 
 }
 // Saves game every 5 Minutes
-window.setInterval(function() {
-  saveGame();
-}, 300000);
+setInterval(saveGame,300000);
 // reads save button and calls save Game
 $("#saveButton").mousedown(saveGame);

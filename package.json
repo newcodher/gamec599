@@ -1,0 +1,11 @@
+{
+  "stylelint":{
+    "extends": "C:/Users/1/.atom/packages/linter-stylelint/node_modules/stylelint-config-standard",
+      "rules":{
+        "length-zero-no-unit": null
+      }
+    },
+  "jshintConfig":{
+    "-W082": true
+   }
+}

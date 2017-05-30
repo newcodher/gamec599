@@ -41,3 +41,82 @@ html {
   display: table;
   height: 0.2em;
 }
+
+/* First line xD */
+
+.button h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+.buttonCanBuy h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+/* Second */
+
+.button p:nth-child(2) {
+  text-align: center;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.buttonCanBuy p:nth-child(2) {
+  text-align: center;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* Third */
+
+.button p:nth-child(3) {
+  text-align: center;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.buttonCanBuy p:nth-child(3) {
+  text-align: center;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* Last */
+
+.button p:last-child {
+  text-align: center;
+  margin: 0px;
+}
+
+.buttonCanBuy p:last-child {
+  text-align: center;
+  margin: 0px;
+}
+
+/* buttons that aren't lit */
+
+.button,
+.buttonCanBuy {
+  border: 1px solid black;
+  width: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* lit buttons */
+
+.buttonCanBuy {
+  background-color: #ff644c;
+  cursor: pointer;
+}
+
+.buttonCanBuy:hover {
+  background-color: #ff8875;
+}
+
+/* unlit */
+
+.button {
+  background-color: lightgray;
+}

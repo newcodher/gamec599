@@ -14,7 +14,19 @@
     <div id="title"> The game with no name </div>
     <!--- INVENTORY -->
     <div id="inventory">
-
+      <div id="loadInventory"></div>
+      <script type="text/template" id="inventoryTemplate">
+        <table id="inventoryT">
+          <tr id="row1">
+            <td id="FirstBulding" class="button" onmousedown="buyBuildings(0)">
+              <h3>First Building</h3>
+              <p><%= firstBuildingGain %>/tick</p>
+              <p>Cost:<%= firstBuildingCost %></p>
+              <p>Owned: <%= firstBuildingOwned %></p>
+            </td>
+          </tr>
+        </table>
+      </script>
     </div>
     <!--- STATS -->
 
@@ -27,7 +39,8 @@
         </ul>
         <div id = "tabStats">
           <script type="text/template" id="statsTemplate">
-            <p> <%= statsTest %> </p>
+            <p>Money: <%= money %> </p>
+            <p>Update: <%= tick %>/sec </p>
           </script>
         </div>
         <div id = "tabPrestige">
@@ -61,7 +74,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-<script src="js/swarm.js"></script>
+<script src="decimal.js"></script>
+<script src="js/h/swarm.js"></script>
 
 <script src="js/data.js"></script>
 <script src="js/core.js"></script>
