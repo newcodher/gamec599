@@ -1,2 +1,2 @@
-$ cat .gitattributes
-*.rb linguist-language=JavaScript
+$cat .gitattributes
+jqueryui.css linguist-vendored=false
