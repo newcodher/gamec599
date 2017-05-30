@@ -1,0 +1,43 @@
+body,
+html {
+  font-family: "Share Tech Mono", monospace;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#title {
+  position: relative;
+  left: 1em;
+  width: 20em;
+  font-size: 3em;
+}
+
+#inventory {
+  top: 3.5em;
+  position: absolute;
+  left: 2em;
+  width: 89.1em;
+  height: 40em;
+  border: 2.4px solid black;
+}
+
+#stats {
+  position: absolute;
+  border: 2.4px solid green;
+  left: 92.2em;
+  width: 25.5em;
+  top: 3.5em;
+  height: 40em;
+}
+
+#tabSettings button {
+  height: 2em;
+  width: 8em;
+  cursor: pointer;
+}
+
+.settingSpacer {
+  display: table;
+  height: 0.2em;
+}
